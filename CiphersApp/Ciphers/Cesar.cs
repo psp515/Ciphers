@@ -1,4 +1,4 @@
-﻿
+﻿using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,29 +6,34 @@ using System.Text;
 
 namespace EncryptionApp.Ciphers.C_Classes
 {
-    public sealed class Cesar : CipherDescription 
+    public sealed class Cesar : CipherClass , CipherStr
     {
-        public string ShortDescription { get; set; } = " ";
-        public string Name { get; set; } = "Base64";
-        public int CipherNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Id { get; set; } = 3;
+        public override string Name { get; set; } = "Cesar";
+        public override string ShortDescription { get; set; } = "Will be from wikipedia";
+        public override string WikipediHttps { get; set; } = "";
 
-        public string Decode(string str)
+        public Cesar()
         {
-            char[] tab = str.ToCharArray();
+
+        }
+
+        public string Decode(string message)
+        {
+            char[] tab = message.ToCharArray();
             for (int i = 0; i < tab.Length; i++)
                  tab[i] = DecodeChar(tab[i]);
            
             return new string(tab);
         }
-        public string Encode(string str)
+        public string Encode(string message)
         {
-            char[] tab = str.ToCharArray();
+            char[] tab = message.ToCharArray();
             for (int i = 0; i < tab.Length; i++)
                   tab[i] = EncodeChar(tab[i]);
          
             return new string(tab);
         }
-
         public char EncodeChar(char a)
         {
             if (Char.IsUpper(a))

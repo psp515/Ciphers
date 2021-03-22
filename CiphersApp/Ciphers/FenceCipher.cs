@@ -1,4 +1,4 @@
-﻿
+﻿using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,21 +6,28 @@ using System.Text;
 
 namespace EncryptionApp.Ciphers.C_Classes
 {
-    public sealed class FenceCipher : CipherDescription
+    public sealed class FenceCipher : CipherClass, CipherStrInt
     {
-        public string ShortDescription { get; set; } = " ";
-        public string Name { get; set; } = "Base64";
-        public int CipherNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Id { get; set; } = 5;
+        public override string Name { get; set; } = "FenceCipher";
+        public override string ShortDescription { get; set; } = "Will be from wikipedia";
+        public override string WikipediHttps { get; set; } = "";
 
-        public string Encode(string str, int n)
+        public FenceCipher()
         {
+
+        }
+
+        public string Encode(string message, int n)
+        {
+            
             string[] tab = new string[n];
             int counter = 1;
             int direction = 0;
             int rw = 0;
-            for (int i = 0; i < str.Length; i++)
+            for (int i = 0; i < message.Length; i++)
             {
-                char a = str[i];
+                char a = message[i];
 
                 tab[rw] = string.Concat(tab[rw], a);
                 if (rw == (n - 1) && direction == 0)
@@ -41,28 +48,24 @@ namespace EncryptionApp.Ciphers.C_Classes
 
             return odp;
         }
-        public string Decode(string str, int n)
+        public string Decode(string message, int n)
         {
-            char[] tab = new char[str.Length];
-            for (int i = 0; i < str.Length; i++)
+            
+            char[] tab = new char[message.Length];
+            for (int i = 0; i < message.Length; i++)
             {
                 tab[i] = ' ';
             }
-            //rzędy
             int row = 0;
-            //1 bieg w dół -1 w bieg góre 
             int direction = 1;
             for (int i = 0; i < n; i++)
             {
                 direction = 1;
-                // litery w rzedzie
-                for (int j = i; j < str.Length;)
+                for (int j = i; j < message.Length;)
                 {
-                    if (row >= str.Length)
+                    if (row >= message.Length)
                         break;
-                    //przypisanie
-                    tab[j] = str[row];
-                    //okrslenie nastepnej pozycji
+                    tab[j] = message[row];
                     if (i == 0 || i == n - 1)
                     {
                         j += (n - 1) * 2;
@@ -79,7 +82,7 @@ namespace EncryptionApp.Ciphers.C_Classes
                     }
                     row++;
                 }
-                if (row >= str.Length)
+                if (row >= message.Length)
                     break;
             }
             return new string(tab);

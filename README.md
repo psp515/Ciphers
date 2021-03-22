@@ -2,10 +2,10 @@
 This repository contains different ciphers.
 
 ### Ciphers:
-- [ ] Cesar
-- [ ] Cesar Variation
-- [ ] Base64
-- [ ] Fence Cipher
+- [X] Cesar
+- [X] Cesar Variation
+- [X] Base64
+- [X] Fence Cipher
 - [ ] Ascii Code Multipier Cipher
 - [ ] Scytale
 - [ ] CondiCipher

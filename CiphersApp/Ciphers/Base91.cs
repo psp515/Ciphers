@@ -1,4 +1,5 @@
 ﻿
+using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,19 +7,25 @@ using System.Text;
 
 namespace EncryptionApp.Ciphers.C_Classes
 {
-    public sealed class Base91 : CipherDescription
+    public sealed class Base91 : CipherClass, CipherStr
     {
-        public string ShortDescription { get; set; } = " ";
-        public string Name { get; set; } = "Base64";
-        public int CipherNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Id { get; set; } = 2;
+        public override string Name { get; set; } = "Base91";
+        public override string ShortDescription { get; set; } = "Will be from wikipedia";
+        public override string WikipediHttps { get; set; } = "";
 
-        public string Decode(string str)
+        public Base91()
+        {
+
+        }
+
+        public string Decode(string message)
         {
             throw new NotImplementedException();
         }
-        public string Encode(string str)
+        public string Encode(string message)
         {
             throw new NotImplementedException();
-        }  
+        }
     }
 }

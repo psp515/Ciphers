@@ -1,4 +1,4 @@
-﻿
+﻿using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,17 +6,23 @@ using System.Text;
 
 namespace EncryptionApp.Ciphers.C_Classes
 {
-    public sealed class Condi : CipherDescription
+    public sealed class Condi : CipherClass, CipherStrStrInt
     {
-        public string ShortDescription { get; set; } = " ";
-        public string Name { get; set; } = "Base64";
-        public int CipherNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Id { get; set; } = 5;
+        public override string Name { get; set; } = "Condi Cipher";
+        public override string ShortDescription { get; set; } = "Will be from wikipedia";
+        public override string WikipediHttps { get; set; } = "";
 
-        public string Encode(string str, string key, int n)
+        public Condi()
+        {
+
+        }
+
+        public string Encode(string message, string k, int n)
         {
             throw new NotImplementedException();
         }
-        public string Decode(string str, string key, int n)
+        public string Decode(string message, string k, int n)
         {
             throw new NotImplementedException();
         }
