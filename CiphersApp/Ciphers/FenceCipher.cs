@@ -8,7 +8,7 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class FenceCipher : CipherClass, CipherStrInt
     {
-        public override int Id { get; set; } = 5;
+        public override int Id { get; set; } = 7;
         public override string Name { get; set; } = "FenceCipher";
         public override string ShortDescription { get; set; } = "Will be from wikipedia";
         public override string WikipediHttps { get; set; } = "";

@@ -9,7 +9,7 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class Base64 : CipherClass, CipherStr
     {
-        public override int Id { get; set; } = 1;
+        public override int Id { get; set; } = 2;
         public override string Name { get; set; } = "Base64";
         public override string ShortDescription { get; set; } = "Will be from wikipedia";
         public override string WikipediHttps { get; set; } = "";

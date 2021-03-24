@@ -9,8 +9,8 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class Base91 : CipherClass, CipherStr
     {
-        public override int Id { get; set; } = 2;
-        public override string Name { get; set; } = "Base91";
+        public override int Id { get; set; } = 3;
+        public override string Name { get; set; } = "Base91 (work in progress)";
         public override string ShortDescription { get; set; } = "Will be from wikipedia";
         public override string WikipediHttps { get; set; } = "";
 

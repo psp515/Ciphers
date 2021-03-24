@@ -8,7 +8,7 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class Cesar : CipherClass , CipherStr
     {
-        public override int Id { get; set; } = 3;
+        public override int Id { get; set; } = 4;
         public override string Name { get; set; } = "Cesar";
         public override string ShortDescription { get; set; } = "Will be from wikipedia";
         public override string WikipediHttps { get; set; } = "";

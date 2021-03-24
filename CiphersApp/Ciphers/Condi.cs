@@ -8,8 +8,8 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class Condi : CipherClass, CipherStrStrInt
     {
-        public override int Id { get; set; } = 5;
-        public override string Name { get; set; } = "Condi Cipher";
+        public override int Id { get; set; } = 6;
+        public override string Name { get; set; } = "Condi Cipher (work in progress)";
         public override string ShortDescription { get; set; } = "Will be from wikipedia";
         public override string WikipediHttps { get; set; } = "";
 

@@ -9,8 +9,8 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class Scytale : CipherClass, CipherStrInt
     {
-        public override int Id { get; set; } = 7;
-        public override string Name { get; set; } = "Scytale";
+        public override int Id { get; set; } = 8;
+        public override string Name { get; set; } = "Scytale (work in progress)";
         public override string ShortDescription { get; set; } = "Will be from wikipedia";
         public override string WikipediHttps { get; set; } = "";
 
