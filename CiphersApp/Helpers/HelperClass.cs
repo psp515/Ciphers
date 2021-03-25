@@ -23,7 +23,21 @@ namespace CiphersApp
             {
                 Console.Clear();
                 Console.WriteLine("Wrong option. Please choose correct option.");
-                HelperClass.BreakText();
+                choice = GetUserChoice(writeMenu, choiceMin, choiceMax);
+            }
+
+            return choice;
+        }
+        public static int GetUserChoiceCipher(Action writeMenu, int choiceMin, int choiceMax)
+        {
+            //todo
+            writeMenu();
+            int choice = GetIntChoice();
+
+            if (choice < choiceMin || choice > choiceMax || choice == -1)
+            {
+                Console.Clear();
+                Console.WriteLine("Wrong option. Please choose correct option.");
                 choice = GetUserChoice(writeMenu, choiceMin, choiceMax);
             }
 
@@ -52,9 +66,10 @@ namespace CiphersApp
         public static void BreakText() =>Console.WriteLine("-----------------------------------------------------------------------------------");
         public static void WriteCipherList(List<CipherMenuModel> listCipherMenuModel)
         {
+            BreakText();
             foreach (CipherMenuModel c in listCipherMenuModel)
                 Console.WriteLine(string.Format("[{0}] - {1}", c.Id.ToString(), c.Name));  
-            HelperClass.BreakText();
+            BreakText();
         }
         public static void WriteCipherOptions()
         {
@@ -65,11 +80,12 @@ namespace CiphersApp
         public static void WriteEndingOptions()
         {
             BreakText();
-            Console.WriteLine("[0] - Quit app\n[1] - Go to main menu\n[2] - Continue with the same cipher");
+            Console.WriteLine("[0] - Quit app\n[1] - Continue with the same cipher\n[2] - Go to main menu");
             BreakText();
         }
         public static void Error() 
         {
+            Console.Clear();
             Console.WriteLine("Sorry, something went wrong moving to main menu!");
             Thread.Sleep(1000);
             Console.Clear();

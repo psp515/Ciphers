@@ -1,4 +1,5 @@
 ﻿
+using CiphersApp;
 using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 using System;
@@ -18,7 +19,13 @@ namespace EncryptionApp.Ciphers.C_Classes
         {
             //SetShort description
         }
-
+        public Base64(int a)
+        {
+            WriteInfo();
+        }
+        public override void Decode() => Console.WriteLine(Decode(HelperClass.GetString("Podaj wiadomość do odkodowania:")));
+        public override void Encode() => Console.WriteLine(Encode(HelperClass.GetString("Podaj wiadomość do zakodowania:")));
+        
         public  string Decode(string message) => System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(message));
         public  string Encode(string message) => System.Convert.ToBase64String(Encoding.UTF8.GetBytes(message));
 

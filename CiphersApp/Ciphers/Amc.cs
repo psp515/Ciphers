@@ -16,15 +16,28 @@ namespace CiphersApp.Ciphers
         {
             WriteInfo();
         }
+
+        public override void Decode()
+        {
+            string a = Decode(HelperClass.GetString("Podaj wiadomość do odkodowania:"));
+            Console.WriteLine(a);
+        }
+        public override void Encode()
+        {
+            string a = HelperClass.GetString("Podaj wiadomość do odkodowania:");
+             a   = Encode(a);
+            Console.WriteLine(a);
+        }
         public string Encode(string message)
         {
+            Console.WriteLine("ENCO");
             char[] tab = message.ToCharArray();
             for (int i = 0; i < tab.Length; i++)
                 tab[i] = (char)(6 * tab[i]);
             return new string(tab);
         }
 
-        public  string Decode(string message)
+        public string Decode(string message)
         {
             char[] tab = message.ToCharArray();
             for (int i = 0; i < tab.Length; i++)

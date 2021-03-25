@@ -12,6 +12,7 @@ namespace CiphersApp.Ciphers
         public virtual string WikipediHttps { get; set; } = "https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna";
         public virtual void WriteInfo()
         {
+            Console.Clear();
             Console.WriteLine("\t\t\t"+Name+"\n");
             Console.WriteLine(ShortDescription);
             Console.WriteLine("\nMore info here: " + WikipediHttps);
@@ -19,8 +20,16 @@ namespace CiphersApp.Ciphers
             Action Menu = HelperClass.WriteCipherOptions;
             FindOption(HelperClass.GetUserChoice(Menu, 0, 2));
         }
+        public virtual void Decode()
+        {
 
-        private void FindOption(int a)
+        }
+        public virtual void Encode()
+        {
+
+        }
+
+        public virtual void FindOption(int a)
         {
            switch(a)
            {
@@ -40,6 +49,12 @@ namespace CiphersApp.Ciphers
            }
         }
 
+        public virtual void BackToMainMenu()
+        {
+            Console.Clear();
+            Program.Main();
+        }
+
         private void StartDecode()
         {
             Console.Clear();
@@ -48,11 +63,7 @@ namespace CiphersApp.Ciphers
             Ending();
         }
 
-        public virtual void Decode()
-        {
-           
-        }
-
+        
         private void StartEncode()
         {
             Console.Clear();
@@ -61,10 +72,7 @@ namespace CiphersApp.Ciphers
             Ending();
         }
 
-        public virtual void Encode()
-        {
-            
-        }
+        
         private void Ending()
         {
             Action Menu = HelperClass.WriteEndingOptions;
@@ -76,24 +84,20 @@ namespace CiphersApp.Ciphers
             switch (a)
             {
                 case 0:
-
                     HelperClass.LeaveApp();
                     break;
                 case 1:
-                    Console.Clear();
-                    BackToMainMenu();
+                    WriteInfo();
                     break;
                 case 2:
-                    //tu jest problemixon
-                    StartDecode();
+                    BackToMainMenu();
                     break;
                 default:
-                    Console.Clear();
                     HelperClass.Error();
                     break;
             }
         }
 
-        public void BackToMainMenu() =>Program.Main();
+        
     }
 }
