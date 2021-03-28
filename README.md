@@ -19,16 +19,16 @@ This folder Contains Ciphers
 - [X] Base64
 - [X] Rail Fence Cipher
 - [X] Ascii Code Multipier Cipher
-- [ ] ROT13
-- [ ] ROT13.5
-- [ ] Scytale
-- [ ] Condi Cipher
-- [ ] Base91
+- [ ] ROT13 M
+- [ ] ROT13.5 M
+- [ ] Scytale M
+- [ ] Condi Cipher M
+- [ ] Base91 M
 - [ ] Vigenere Cipher
-- [ ] Morse Code
+- [ ] Morse Code M
 - [ ] Feistel Cipher
 - [ ] ECC 
-- [ ] System.Security.Cryptography
+- [ ] System.Security.Cryptography L
 
 ### Helpers
 This folder contains class with useful methods.
@@ -42,5 +42,5 @@ This folder contains class with useful methods.
 
 
 #### ReadMe Description
-M - Main Focus
-L - Long Term
+- M => Main Focus
+- L => Long Term
