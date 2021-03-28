@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{4167F3D6-0A00-4EED-8906-E53BB3578E69}|Default">
+  <MonoDevelop.Ide.ItemProperties.CiphersApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ciphers/Rot13.5">
+    <Files>
+      <File FileName="Ciphers/Amc.cs" Line="1" Column="1" />
+      <File FileName="Ciphers/Rot13.5" Line="16" Column="10" />
+      <File FileName="Ciphers/Caesar.cs" Line="104" Column="10" />
+      <File FileName="Ciphers/CaesarVariation.cs" Line="125" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CiphersApp" expanded="True">
+            <Node name="CiphersApp" expanded="True">
+              <Node name="Ciphers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
