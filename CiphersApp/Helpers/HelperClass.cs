@@ -9,36 +9,18 @@ namespace CiphersApp
 {
     public class HelperClass
     {
-        public static int Radomize(int minValue, int maxValue)
-        {
-            Random r = new Random();
-            return r.Next(minValue, maxValue);
-        }
-        public static int GetUserChoice(Action writeMenu,int choiceMin, int choiceMax)
+        
+        public static int GetUserChoice(Action writeMenu, int choiceMin, int choiceMax, string menuName)
         {
             writeMenu();
             int choice = GetIntChoice();
-
-            if (choice<choiceMin||choice>choiceMax||choice==-1) 
-            {
-                Console.Clear();
-                Console.WriteLine("Wrong option. Please choose correct option.");
-                choice = GetUserChoice(writeMenu, choiceMin, choiceMax);
-            }
-
-            return choice;
-        }
-        public static int GetUserChoiceCipher(Action writeMenu, int choiceMin, int choiceMax)
-        {
-            //todo
-            writeMenu();
-            int choice = GetIntChoice();
-
             if (choice < choiceMin || choice > choiceMax || choice == -1)
             {
                 Console.Clear();
-                Console.WriteLine("Wrong option. Please choose correct option.");
-                choice = GetUserChoice(writeMenu, choiceMin, choiceMax);
+                Console.WriteLine(" Moving to {0} menu. Please choose correct option...", menuName);
+                Thread.Sleep(2000);
+                Console.Clear();
+                return -1;
             }
 
             return choice;
@@ -46,7 +28,7 @@ namespace CiphersApp
         private static int GetIntChoice()
         {
             string a = Console.ReadLine();
-            if(Regex.IsMatch(a, @"^\d+$"))
+            if (Regex.IsMatch(a, @"^\d+$"))
             {
                 return Int32.Parse(a);
             }
@@ -55,35 +37,33 @@ namespace CiphersApp
         public static int GetInt(string text)
         {
             Console.WriteLine(text);
-            //to do
-            return 1;
+            string a = Console.ReadLine();
+            if (Regex.IsMatch(a, @"^\d+$"))
+            {
+                return Int32.Parse(a);
+            }
+            else
+                return GetInt(text);
         }
         public static string GetString(string text)
         {
             Console.WriteLine(text);
             return Console.ReadLine();
         }
-        public static void BreakText() =>Console.WriteLine("-----------------------------------------------------------------------------------");
+
+        public static void BreakText() => Console.WriteLine("-----------------------------------------------------------------------------------");
+
         public static void WriteCipherList(List<CipherMenuModel> listCipherMenuModel)
         {
             BreakText();
+            Console.WriteLine("List of possible actions: (navigation is simple first select cipher by number in [X] then pres enter)");
             foreach (CipherMenuModel c in listCipherMenuModel)
-                Console.WriteLine(string.Format("[{0}] - {1}", c.Id.ToString(), c.Name));  
+                Console.WriteLine(string.Format("[{0}] - {1}", c.Id.ToString(), c.Name));
             BreakText();
         }
-        public static void WriteCipherOptions()
-        {
-            BreakText();
-            Console.WriteLine("[0] - Go to main menu.\n[1] - Encode\n[2] - Decode");
-            BreakText();
-        }
-        public static void WriteEndingOptions()
-        {
-            BreakText();
-            Console.WriteLine("[0] - Quit app\n[1] - Continue with the same cipher\n[2] - Go to main menu");
-            BreakText();
-        }
-        public static void Error() 
+        
+
+        public static void Error()
         {
             Console.Clear();
             Console.WriteLine("Sorry, something went wrong moving to main menu!");
@@ -100,6 +80,12 @@ namespace CiphersApp
             Console.WriteLine("\t\t\t\tHave a wonderfull day!");
             Thread.Sleep(1500);
             Environment.Exit(0);
+        }
+        public static void NotAvaliable()  
+        {
+            Console.Clear();
+            Console.WriteLine("This option is not avaliable yet.");
+            Thread.Sleep(1500);
         }
 
     }

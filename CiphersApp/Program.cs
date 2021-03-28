@@ -3,6 +3,7 @@ using CiphersApp.Helpers;
 using CiphersApp.Model;
 using EncryptionApp.Ciphers.C_Classes;
 using System;
+using System.Collections.Generic;
 
 namespace CiphersApp
 {
@@ -10,7 +11,7 @@ namespace CiphersApp
     {
         public static void Main()
         {
-            Console.WriteLine("\t\t\t  Welcome to Ciphers Repo!\n\t\t\tThis list of actual Ciphers:");
+            Console.WriteLine("\t\t\t  Welcome to CiphersApp!");
             Starting();
         }
 
@@ -18,45 +19,19 @@ namespace CiphersApp
         {
             CiphersLists cl = new CiphersLists();
             Action WriteMenu = () => HelperClass.WriteCipherList(cl.MenuModels);
-            FindOption(HelperClass.GetUserChoice(WriteMenu, 0, 9));
-        }
+            int cipher = HelperClass.GetUserChoice(WriteMenu, 0, 8, "Main");
 
-        private static void FindOption(int a)
-        {
-            switch (a)
+            try
             {
-                case 0:
-                    HelperClass.LeaveApp();
-                    break;
-                case 1:
-                    Amc amc = new Amc(a);
-                    break;
-                case 2:
-                    Base64 b = new Base64(a);
-                    break; 
-                case 3:
-                    
-                    break;
-                case 4:
-
-                    break;
-                case 5:
-
-                    break;
-                case 6:
-
-                    break;
-                case 7:
-
-                    break;
-                case 8:
-
-                    break;
-                default:
-                    HelperClass.Error();
-                    break;
-                    
+                if (cipher == -1)
+                    Main();
+                cl.MenuModels[cipher].Start();
             }
+            catch(Exception e)
+            {
+                HelperClass.Error();
+            }
+            
         }
     }
 }

@@ -7,7 +7,10 @@ E:\Git\Ciphers\CiphersApp\bin\Debug\netcoreapp3.1\CiphersApp.pdb
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.csprojAssemblyReference.cache
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.AssemblyInfoInputs.cache
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.AssemblyInfo.cs
-E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.csproj.CoreCompileInputs.cache
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.dll
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.pdb
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.genruntimeconfig.cache
+E:\Git\Ciphers\CiphersApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Git\Ciphers\CiphersApp\bin\Debug\netcoreapp3.1\TextCopy.dll
+E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.csproj.CoreCompileInputs.cache
+E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.csproj.CopyComplete

@@ -1,21 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CiphersApp;
 using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 
 namespace EncryptionApp.Ciphers.C_Classes
 {
-    public sealed class CesarVariation : CipherClass, CipherStrInt
+    public sealed class CaesarVariation : CipherClass, CipherStrInt
     {
         public override int Id { get; set; } = 5;
-        public override string Name { get; set; } = "CesarVariation";
-        public override string ShortDescription { get; set; } = "Will be from wikipedia";
-        public override string WikipediHttps { get; set; } = "";
+        public override string Name { get; set; } = "CaesarVariation";
+        public override string ShortDescription { get; set; } = "CaesarVariation is a variation on Caesar cipher. This cipher works the same way like Caesar\n cipher but user is choosing letter shift (in Caesar cipher shift = 3),also numbers are encoded.";
+        public override string WikipediaHttps { get; set; } = "https://en.wikipedia.org/wiki/Caesar_cipher";
 
-        public CesarVariation()
+        public CaesarVariation()
         {
 
+        }
+        public CaesarVariation(int a)
+        {
+            WriteInfo();
+        }
+        public override void Decode()
+        {
+            string a = Decode(HelperClass.GetString("Provide encoded message:"), HelperClass.GetInt("Enter the shift:"));
+            TextCopy.ClipboardService.SetText(a);
+            Console.WriteLine("Your message: (encoded message is saved in clipboard) \n" + a);
+        }
+
+        public override void Encode()
+        {
+            string a = Encode(HelperClass.GetString("Provide message:"), HelperClass.GetInt("Set shift:"));
+            TextCopy.ClipboardService.SetText(a);
+            Console.WriteLine("Your encoded message: (encoded message is saved in clipboard) \n" + a);
         }
 
         public string Decode(string message, int n)
