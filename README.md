@@ -1,5 +1,5 @@
-# Ciphers
-This app contains multiple ciphers. With each cipher you can test how cipher decode/encode informations, also you can get some inforamtions from wikipedia or link to wikipedia informations about cipher.
+# Ciphers App
+This app contains multiple ciphers. With each cipher you can test how cipher decode/encode messasges, read short description and if user wants to get more informations about selected cipher, user can select option that open link to wikipedia or another website.
 
 ## App Main Folders
 - Ciphers
@@ -14,14 +14,21 @@ This folder contains interfaces e.g. cipher interfaces defining how many and wha
 
 ### Ciphers:
 This folder Contains Ciphers
-- [X] Caesar
+- [X] Caesar Cipher
 - [X] Caesar Variation
 - [X] Base64
-- [X] Fence Cipher
+- [X] Rail Fence Cipher
 - [X] Ascii Code Multipier Cipher
-- [ ] Scytale
-- [ ] CondiCipher
-- [ ] Base91
+- [ ] ROT13 M
+- [ ] ROT13.5 M
+- [ ] Scytale M
+- [ ] Condi Cipher M
+- [ ] Base91 M
+- [ ] Vigenere Cipher
+- [ ] Morse Code M
+- [ ] Feistel Cipher
+- [ ] ECC 
+- [ ] System.Security.Cryptography L
 
 ### Helpers
 This folder contains class with useful methods.
@@ -33,3 +40,7 @@ This folder contains class with useful methods.
 #### NuGet Packages
 - TextCopy
 
+
+#### ReadMe Description
+- M => Main Focus
+- L => Long Term
