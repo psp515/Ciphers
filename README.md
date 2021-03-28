@@ -14,13 +14,14 @@ This folder contains interfaces e.g. cipher interfaces defining how many and wha
 
 ### Ciphers:
 This folder Contains Ciphers
-- [X] Cesar
-- [X] Cesar Variation
+- [X] Caesar
+- [X] Caesar Variation
 - [X] Base64
 - [X] Fence Cipher
-- [ ] Ascii Code Multipier Cipher
+- [X] Ascii Code Multipier Cipher
 - [ ] Scytale
 - [ ] CondiCipher
+- [ ] Base91
 
 ### Helpers
 This folder contains class with useful methods.
@@ -28,3 +29,7 @@ This folder contains class with useful methods.
 #### Used Environments
 - C#
 - .NET Core
+
+#### NuGet Packages
+- TextCopy
+
