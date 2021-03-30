@@ -17,12 +17,9 @@ namespace EncryptionApp.Ciphers.C_Classes
 
         public Base64()
         {
-            //SetShort description
+
         }
-        public Base64(int a)
-        {
-            WriteInfo();
-        }
+
         public override void Decode()
         {
             string a = Decode(HelperClass.GetString("Provide encoded message:"));

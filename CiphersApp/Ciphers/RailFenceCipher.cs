@@ -9,7 +9,7 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class RailFenceCipher : CipherClass, CipherStrInt
     {
-        public override int Id { get; set; } = 7;
+        public override int Id { get; set; } = 5;
         public override string Name { get; set; } = "FenceCipher";
         public override string ShortDescription { get; set; } = "The rail fence cipher (also called a zigzag cipher) is a form of transposition cipher.\nIt derives its name from the way in which it is encoded.";
         public override string WikipediaHttps { get; set; } = "https://en.wikipedia.org/wiki/Rail_fence_cipher";
@@ -17,10 +17,6 @@ namespace EncryptionApp.Ciphers.C_Classes
         public RailFenceCipher()
         {
 
-        }
-        public RailFenceCipher(int a)
-        {
-            WriteInfo();
         }
         public override void Decode()
         {

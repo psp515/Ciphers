@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "m7T/Zu6j2NOETcUWUj282X76Ub+fUPLl/5ENvrOeW5zVDHnmHYqry/bl7ZrNZH8Dkwp00DcCrF0BIa2yFn3Ajg==",
+  "dgSpecHash": "qciVdMaHYkHcULo8O9x5QHwA9EZUA5OQv+Hj1yZyydRPUCWNNL+rBBXh7hksIRGjOuv/+XJUBwC7m8MYaftDWA==",
   "success": true,
-  "projectFilePath": "/Users/psp515/Documents/GitHub/Ciphers/CiphersApp/CiphersApp.csproj",
+  "projectFilePath": "E:\\Git\\Ciphers\\CiphersApp\\CiphersApp.csproj",
   "expectedPackageFiles": [
-    "/Users/psp515/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
-    "/Users/psp515/.nuget/packages/textcopy/4.3.0/textcopy.4.3.0.nupkg.sha512"
+    "C:\\Users\\psp515\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\psp515\\.nuget\\packages\\textcopy\\4.3.0\\textcopy.4.3.0.nupkg.sha512",
+    "C:\\Users\\psp515\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }

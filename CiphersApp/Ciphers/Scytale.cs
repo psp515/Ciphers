@@ -1,9 +1,12 @@
 ﻿
+using CiphersApp;
 using CiphersApp.Ciphers;
 using CiphersApp.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Collections;
 
 namespace EncryptionApp.Ciphers.C_Classes
 {
@@ -18,18 +21,28 @@ namespace EncryptionApp.Ciphers.C_Classes
         {
 
         }
-        public Scytale(int a)
+        public override void Decode()
         {
-            WriteInfo();
+            string a = Decode(HelperClass.GetString("Provide encoded message:"), HelperClass.GetInt("Enter the number of cilindersides:"));
+            TextCopy.ClipboardService.SetText(a);
+            Console.WriteLine("Your message: (encoded message is saved in clipboard) \n" + a);
         }
 
-        public string Decode(string message, int n)
+        public override void Encode()
         {
-            throw new NotImplementedException();
+            string a = Encode(HelperClass.GetString("Provide message:"), HelperClass.GetInt("Set number of cilindersides:"));
+            TextCopy.ClipboardService.SetText(a);
+            Console.WriteLine("Your encoded message: (encoded message is saved in clipboard) \n" + a);
         }
-        public string Encode(string message, int n)
+
+        public string Decode(string ciphertext, int key)
         {
-            throw new NotImplementedException();
+            return null;
+        }
+        public string Encode(string plaintext, int key)
+        {
+            return null;
         }
     }
 }
+

@@ -29,52 +29,52 @@ namespace CiphersApp.Helpers
             cipherMenu_0.Start = HelperClass.LeaveApp;
             MenuModels.Add(cipherMenu_0);
 
-            Amc a = new Amc();
-            cipherMenu_1.Id = a.Id;
-            cipherMenu_1.Name = a.Name;
-            cipherMenu_1.Start = a.WriteInfo;
+            Amc amc = new Amc();
+            cipherMenu_1.Id = amc.Id;
+            cipherMenu_1.Name = amc.Name;
+            cipherMenu_1.Start = amc.WriteInfo;
             MenuModels.Add(cipherMenu_1);
 
-            Base64 B = new Base64();
-            cipherMenu_2.Id = B.Id;
-            cipherMenu_2.Name = B.Name;
-            cipherMenu_2.Start = B.WriteInfo;
+            Base64 base64 = new Base64();
+            cipherMenu_2.Id = base64.Id;
+            cipherMenu_2.Name = base64.Name;
+            cipherMenu_2.Start = base64.WriteInfo;
             MenuModels.Add(cipherMenu_2);
 
-            Base91 B91 = new Base91();
-            cipherMenu_3.Id = B91.Id;
-            cipherMenu_3.Name = B91.Name;
-            cipherMenu_3.Start = B91.WriteInfo;
+            Caesar caesar = new Caesar();
+            cipherMenu_3.Id = caesar.Id;
+            cipherMenu_3.Name = caesar.Name;
+            cipherMenu_3.Start = caesar.WriteInfo;
             MenuModels.Add(cipherMenu_3);
 
-            Caesar C = new Caesar();
-            cipherMenu_4.Id = C.Id;
-            cipherMenu_4.Name = C.Name;
-            cipherMenu_4.Start = C.WriteInfo;
+            CaesarVariation caesarVariation = new CaesarVariation();
+            cipherMenu_4.Id = caesarVariation.Id;
+            cipherMenu_4.Name = caesarVariation.Name;
+            cipherMenu_4.Start = caesarVariation.WriteInfo;
             MenuModels.Add(cipherMenu_4);
 
-            CaesarVariation CV = new CaesarVariation();
-            cipherMenu_5.Id = CV.Id;
-            cipherMenu_5.Name = CV.Name;
-            cipherMenu_5.Start =CV.WriteInfo;
+            RailFenceCipher railFenceCipher = new RailFenceCipher();
+            cipherMenu_5.Id = railFenceCipher.Id;
+            cipherMenu_5.Name = railFenceCipher.Name;
+            cipherMenu_5.Start = railFenceCipher.WriteInfo;
             MenuModels.Add(cipherMenu_5);
 
-            Condi ci = new Condi();
-            cipherMenu_6.Id = ci.Id;
-            cipherMenu_6.Name = ci.Name;
-            cipherMenu_6.Start = ci.WriteInfo;
+            ROT135 ROT135 = new ROT135();
+            cipherMenu_6.Id = ROT135.Id;
+            cipherMenu_6.Name = ROT135.Name;
+            cipherMenu_6.Start = ROT135.WriteInfo;
             MenuModels.Add(cipherMenu_6);
 
-            RailFenceCipher Fc = new RailFenceCipher();
-            cipherMenu_7.Id = Fc.Id;
-            cipherMenu_7.Name = Fc.Name;
-            cipherMenu_7.Start = Fc.WriteInfo;
+            ROT13 ROT13 = new ROT13();
+            cipherMenu_7.Id = ROT13.Id;
+            cipherMenu_7.Name = ROT13.Name;
+            cipherMenu_7.Start = ROT13.WriteInfo;
             MenuModels.Add(cipherMenu_7);
 
-            Scytale S = new Scytale();
-            cipherMenu_8.Id = S.Id;
-            cipherMenu_8.Name = S.Name;
-            cipherMenu_8.Start = S.WriteInfo;
+            Scytale scytale = new Scytale();
+            cipherMenu_8.Id = scytale.Id;
+            cipherMenu_8.Name = scytale.Name;
+            cipherMenu_8.Start = scytale.WriteInfo;
             MenuModels.Add(cipherMenu_8);
 
         }

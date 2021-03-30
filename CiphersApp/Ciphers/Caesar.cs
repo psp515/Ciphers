@@ -9,19 +9,16 @@ namespace EncryptionApp.Ciphers.C_Classes
 {
     public sealed class Caesar : CipherClass , CipherStr
     {
-        public override int Id { get; set; } = 4;
+        public override int Id { get; set; } = 3;
         public override string Name { get; set; } = "Cesar";
-        public override string ShortDescription { get; set; } = "In cryptography, a Caesar cipher, is one of the simplest and most widely known encryption techniques.\nIt is a type of substitution cipher in which each letter in the plaintext is replaced by a letter\nsome fixed number of positions down the alphabet.he method is named after Julius Caesar, who used\nit in his private correspondence.";
+        public override string ShortDescription { get; set; } = "In cryptography, a Caesar cipher, is one of the simplest and most widely known encryption techniques.\nIt is a type of substitution cipher in which each letter in the plaintext is replaced by a letter\nsome fixed number of positions down the alphabet.he method is named after Julius Caesar, who used\nit in his private correspondence. (shift == 3)";
         public override string WikipediaHttps { get; set; } = "https://en.wikipedia.org/wiki/Caesar_cipher";
 
         public Caesar()
         {
 
         }
-        public Caesar(int a)
-        {
-            WriteInfo();
-        }
+
         public override void Decode()
         {
             string a = Decode(HelperClass.GetString("Provide encoded message:"));

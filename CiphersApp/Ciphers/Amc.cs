@@ -14,11 +14,7 @@ namespace CiphersApp.Ciphers
         public override string WikipediaHttps { get; set; } = "https://en.wikipedia.org/wiki/English_Wikipedia";
 
         public Amc(){ }
-        public Amc(int a)
-        {
-            WriteInfo();
-        }
-
+        
         public override void Decode()
         {
             string a = Decode(HelperClass.GetString("Provide encoded message:"));
