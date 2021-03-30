@@ -22,13 +22,6 @@ This folder Contains Ciphers
 - [ ] ROT13 M
 - [ ] ROT13.5 M
 - [ ] Scytale M
-- [ ] Condi Cipher M
-- [ ] Base91 M
-- [ ] Vigenere Cipher
-- [ ] Morse Code M
-- [ ] Feistel Cipher
-- [ ] ECC 
-- [ ] System.Security.Cryptography L
 
 ### Helpers
 This folder contains class with useful methods.
