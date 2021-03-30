@@ -19,8 +19,8 @@ This folder Contains Ciphers
 - [X] Base64
 - [X] Rail Fence Cipher
 - [X] Ascii Code Multipier Cipher
-- [ ] ROT13 M
-- [ ] ROT13.5 M
+- [X] ROT13 
+- [X] ROT13.5/ROT18 
 - [ ] Scytale M
 
 ### Helpers
