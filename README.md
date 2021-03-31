@@ -35,5 +35,6 @@ This folder contains class with useful methods.
 #### NuGet Packages
 - TextCopy
 
-#### Updates
-Application may have some updates in fututre. Updates will focus on adding new ciphers. 
+#### Status
+- Ended
+- Application may have some updates in fututre. Updates will focus on adding new ciphers (or rebuilding app in Windows.Forms). 
