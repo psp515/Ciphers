@@ -35,11 +35,5 @@ This folder contains class with useful methods.
 #### NuGet Packages
 - TextCopy
 
-
-#### ReadMe Description
-- M => Main Focus
-- L => Long Term
-
-
 #### Updates
 Application may have some updates in fututre. Updates will focus on adding new ciphers. 
