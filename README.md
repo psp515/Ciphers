@@ -20,13 +20,10 @@ This folder Contains Ciphers
 - [X] Rail Fence Cipher
 - [X] Ascii Code Multipier Cipher
 - [X] ROT13 
-<<<<<<< HEAD
 - [X] ROT13.5 
 - [X] Scytale 
-=======
 - [X] ROT13.5/ROT18 
-- [ ] Scytale M
->>>>>>> 1825b167e0c33d4683a92cc23a041535fc85dc9e
+- [X] Scytale 
 
 ### Helpers
 This folder contains class with useful methods.
