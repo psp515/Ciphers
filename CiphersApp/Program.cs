@@ -11,6 +11,7 @@ namespace CiphersApp
     {
         public static void Main()
         {
+            Console.Title = "CiphersApp";
             Console.WriteLine("\t\t\t  Welcome to CiphersApp!");
             Starting();
         }
