@@ -19,9 +19,9 @@ This folder Contains Ciphers
 - [X] Base64
 - [X] Rail Fence Cipher
 - [X] Ascii Code Multipier Cipher
-- [ ] ROT13 M
-- [ ] ROT13.5 M
-- [ ] Scytale M
+- [X] ROT13 
+- [X] ROT13.5 
+- [X] Scytale 
 
 ### Helpers
 This folder contains class with useful methods.
@@ -37,3 +37,7 @@ This folder contains class with useful methods.
 #### ReadMe Description
 - M => Main Focus
 - L => Long Term
+
+
+#### Updates
+Application may have some updates in fututre. Updates will focus on adding new ciphers. 

@@ -28,3 +28,4 @@ E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.csproj.CopyComplete
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.dll
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.pdb
 E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.genruntimeconfig.cache
+E:\Git\Ciphers\CiphersApp\obj\Debug\netcoreapp3.1\CiphersApp.csprojAssemblyReference.cache
